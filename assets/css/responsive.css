@@ -1,0 +1,180 @@
+/* ==========================================
+   Ajustes de Responsividade — Quanta Shop
+   ========================================== */
+
+/* ---- Prevent horizontal overflow ---- */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ---- Tablets (< 992px) ---- */
+@media (max-width: 991px) {
+  .pb_cover_v3 .heading {
+    font-size: 40px;
+  }
+
+  .pb_cover_v3 .sub-heading p {
+    font-size: 16px;
+  }
+
+  .pb_form_v1 {
+    padding: 28px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .pb_navbar .nav-link {
+    font-size: 0.88rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
+/* ---- Mobile (< 768px) ---- */
+@media (max-width: 767px) {
+  /* Section: allow content to grow naturally */
+  .pb_cover_v3 {
+    height: auto !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pb_cover_v3 > .container > .row {
+    height: auto !important;
+    padding: 3em 0 4em !important;
+    flex-direction: column;
+  }
+
+  /* Text block: full width, left-aligned */
+  .pb_cover_v3 .col-md-7 {
+    text-align: left !important;
+    margin-bottom: 1rem;
+  }
+
+  .pb_cover_v3 .heading {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .pb_cover_v3 .sub-heading p {
+    font-size: 14px;
+    margin-bottom: 0.6rem !important;
+  }
+
+  /* Form card: full width with comfortable padding */
+  .pb_cover_v3 .col-md-5 {
+    width: 100%;
+  }
+
+  .pb_form_v1 {
+    padding: 24px 20px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .pb_form_v1 h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Input heights */
+  .form-control.pb_height-50 {
+    height: 46px !important;
+    font-size: 0.9rem;
+  }
+
+  .fileUpload {
+    height: 46px;
+  }
+
+  .fileUpload label {
+    font-size: 0.82rem !important;
+    line-height: 46px;
+  }
+
+  /* Submit button */
+  .btn-lg.btn-block {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Navbar brand logo */
+  .navbar-brand img {
+    width: 6rem !important;
+  }
+
+  /* Navbar collapsed items */
+  .pb_navbar .navbar-nav {
+    padding: 0.4rem 0;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 6px;
+  }
+
+  .pb_navbar .navbar-nav .nav-item {
+    margin-left: 0 !important;
+  }
+
+  .pb_navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.55rem 1.2rem;
+  }
+
+  .pb_navbar ul > li.cta-btn > a > span {
+    display: inline-block;
+    margin: 0.4rem 0;
+  }
+
+  /* Footer layout */
+  .pb_footer .list-inline {
+    padding-left: 0;
+  }
+
+  .pb_footer table,
+  .pb_footer tbody,
+  .pb_footer tr,
+  .pb_footer td {
+    display: block;
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* ---- Small phones (< 480px) ---- */
+@media (max-width: 480px) {
+  .pb_cover_v3 .heading {
+    font-size: 24px;
+  }
+
+  .pb_cover_v3 .sub-heading p {
+    font-size: 13px;
+  }
+
+  .pb_form_v1 {
+    padding: 18px 14px;
+  }
+
+  .pb_form_v1 h2 {
+    font-size: 1.15rem;
+  }
+
+  .form-control.pb_height-50 {
+    height: 44px !important;
+    font-size: 0.85rem;
+  }
+
+  .fileUpload {
+    height: 44px;
+  }
+
+  .navbar-brand img {
+    width: 5.5rem !important;
+  }
+
+  /* Container padding */
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
