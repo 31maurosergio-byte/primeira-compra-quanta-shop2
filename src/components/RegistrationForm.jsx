@@ -199,21 +199,17 @@ export default function RegistrationForm() {
 
       <div className="form-group d-flex align-items-center">
         <IMaskInput
-          mask="R$ num"
-          blocks={{
-            num: {
-              mask: Number,
-              scale: 2,
-              thousandsSeparator: '.',
-              padFractionalZeros: true,
-              normalizeZeros: true,
-              radix: ',',
-              min: 0,
-              max: 999999,
-            },
-          }}
+          mask={Number}
+          scale={2}
+          thousandsSeparator="."
+          padFractionalZeros={true}
+          normalizeZeros={true}
+          radix=","
+          mapToRadix={['.']}
+          min={0}
+          max={999999}
           value={form.valor}
-          onAccept={(value) => setForm(prev => ({ ...prev, valor: value.replace('R$ ', '') }))}
+          onAccept={(value) => setForm(prev => ({ ...prev, valor: value }))}
           className={`form-control pb_height-50 reverse${errors.valor ? ' border border-danger rounded' : ''}`}
           placeholder="Valor da compra (R$ 0,00)"
           autoComplete="off"
