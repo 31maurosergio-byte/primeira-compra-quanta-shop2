@@ -17,8 +17,10 @@ function keepOnlyNumbers(str) {
 }
 
 function extractCnpjFromUrl() {
-  const url = window.location.href
-  const match = url.match(/br\/([^/]+)/)
+  const params = new URLSearchParams(window.location.search)
+  if (params.get('cnpj')) return params.get('cnpj')
+
+  const match = window.location.href.match(/br\/([^/?#]+)/)
   return match ? match[1] : null
 }
 
