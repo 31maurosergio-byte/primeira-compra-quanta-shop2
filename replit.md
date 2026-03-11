@@ -1,53 +1,50 @@
-# Quanta Shop
+# Cadastro Facilitado - Quanta Shop
 
-A Brazilian e-commerce shopping application built with React and Vite.
+A static landing page for Quanta Shop's first-purchase cashback registration system.
 
 ## Overview
 
-Quanta Shop ("primeira compra" = "first purchase") is a product showcase and shopping cart web app in Portuguese targeting Brazilian users. It features product listings, category filtering, search, and a cart with quantity management.
+This is a Vue 3 (CDN) + jQuery + Bootstrap 4 static HTML site. It presents a registration form for Quanta Shop customers to sign up for cashback on their first purchase.
 
 ## Tech Stack
 
-- **Frontend**: React 19 + Vite 7
-- **Language**: JavaScript (JSX)
-- **Styling**: Plain CSS (no external UI library)
-- **Build tool**: Vite
+- **Frontend**: Vue 3 (CDN via unpkg)
+- **UI Framework**: Bootstrap 4
+- **JavaScript**: jQuery, Slick carousel, Toastify
+- **Fonts**: Font Awesome, Ionicons
+- **Server**: `serve` (static file server)
 
 ## Project Structure
 
 ```
 /
-├── src/
-│   ├── App.jsx       # Main application component (products, cart, UI)
-│   ├── App.css       # All component styles
-│   ├── main.jsx      # React entry point
-│   └── index.css     # Global reset/base styles
-├── index.html        # HTML entry (lang="pt-BR")
-├── vite.config.js    # Vite config (port 5000, host 0.0.0.0, allowedHosts: true)
-└── package.json
+├── index.html          # Main HTML (Vue template + page markup)
+├── assets/
+│   ├── css/            # Bootstrap, component styles, custom CSS
+│   ├── fonts/          # FontAwesome, Ionicons, Slick fonts
+│   ├── images/         # Page images
+│   ├── js/             # jQuery, Bootstrap, Vue utilities, main.js
+│   └── scss/           # Source SCSS files
+└── package.json        # npm scripts (serve)
 ```
 
 ## Features
 
-- 12 product listings with categories, prices, ratings, and badges
-- Category filter bar (Todos, Eletrônicos, Calçados, Vestuário, etc.)
-- Live search filter by name and category
-- Add to cart with quantity management
-- Cart modal with subtotal, shipping, and total calculation
-- Free shipping threshold (R$ 299)
-- Toast notifications on add to cart
-- Fully responsive design
-- Portuguese (pt-BR) interface
+- Registration form with CPF, WhatsApp, email, password, purchase value, and receipt upload
+- Vue 3 form validation and submission
+- Toastify notifications
+- Page loader animation (jQuery controlled)
+- Responsive Bootstrap layout
+- Social links in footer (WhatsApp, Instagram, Facebook, YouTube)
 
 ## Running
 
 ```bash
-npm run dev   # Development server on port 5000
-npm run build # Production build to dist/
+npx serve . -p 5000    # Serve static files on port 5000
 ```
 
 ## Deployment
 
-Configured as a **static** deployment:
-- Build command: `npm run build`
-- Public directory: `dist`
+Configured as a **static** deployment.
+- No build step needed
+- Public directory: project root (`.`)
