@@ -253,7 +253,7 @@ export default function RegistrationForm() {
           />
           <label className="form-check-label" htmlFor="termos">
             Eu aceito os{' '}
-            <a href="https://quantashop.com.br/termos" target="_blank" rel="noreferrer">
+            <a href="https://quantashop.com.br/termos" target="_blank" rel="noreferrer" style={{ color: '#665fee', fontWeight: 500 }}>
               termos e condições
             </a>
           </label>
