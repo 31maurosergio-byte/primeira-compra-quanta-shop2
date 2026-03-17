@@ -7,11 +7,12 @@ export default function App() {
     <>
       <Navbar />
       <section
-        className="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light"
+        className="pb_cover_v3 cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light"
         id="section-home"
+        style={{ minHeight: '95vh', height: 'auto' }}
       >
         <div className="container">
-          <div className="row align-items-center justify-content-center">
+          <div className="row align-items-center justify-content-center" style={{ minHeight: '95vh', height: 'auto', paddingTop: '100px', paddingBottom: '3rem' }}>
             <div className="col-md-7">
               <h2 className="heading mb-3">
                 Cadastre-se no <strong>Quanta Shop</strong> e receba cashback nas
