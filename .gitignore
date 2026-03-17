@@ -1,1 +1,10 @@
 node_modules
+dist
+attached_assets
+.cache
+.local
+.agents
+.upm
+.vite
+.config
+.replit
